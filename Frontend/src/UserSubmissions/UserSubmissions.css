@@ -274,7 +274,6 @@
   line-height: 1.6;
   white-space: pre-line;
   color: #2d3748;
-  transition: max-height 0.3s ease;
 }
 
 .admin-reply.collapsed .reply-content {

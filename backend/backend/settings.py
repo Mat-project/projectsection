@@ -304,7 +304,7 @@ EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', '')
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD', '')
 
 # Default to EMAIL_HOST_USER if no DEFAULT_FROM_EMAIL is provided
-DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL') or EMAIL_HOST_USER or 'noreply@lktool.com'
+DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL') or EMAIL_HOST_USER
 
 # Admin email for receiving notifications
 ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL') or DEFAULT_FROM_EMAIL
@@ -321,7 +321,7 @@ print(f"ADMIN_EMAIL: {ADMIN_EMAIL}")
 print("-------------------------\n")
 
 # Frontend URL for email verification links
-FRONTEND_URL = os.environ.get('FRONTEND_URL', 'https://projectsection-ten.vercel.app/')
+FRONTEND_URL = os.environ.get('FRONTEND_URL')
 
 # Email background processing setting
 SEND_VERIFICATION_EMAIL = True 
@@ -385,7 +385,7 @@ ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
 ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD')
 
 # Add Google OAuth Client ID
-GOOGLE_OAUTH_CLIENT_ID = os.environ.get('GOOGLE_OAUTH_CLIENT_ID', '865917249576-o12qfisk9hpp4b10vjvdj2d1kqhunva9.apps.googleusercontent.com')
+GOOGLE_OAUTH_CLIENT_ID = os.environ.get('GOOGLE_OAUTH_CLIENT_ID')
 
 # Make DEBUG logging visible
 LOGGING = {
