@@ -63,6 +63,8 @@ ALLOWED_HOSTS = [
     'lktool.onrender.com',  # Your backend domain
     'localhost',
     '127.0.0.1',
+    'lktool-s3s7.onrender.com'
+    
 ]
 
 # Custom user model - this must come BEFORE the auth app is used
@@ -253,6 +255,9 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:3000",
+    'https://www.lktoolkit.in',
+    'https://lktoolkit.in',
+    'https://lktool.vercel.app',
 ]
 
 # Allow credentials
@@ -293,6 +298,9 @@ CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:3000",
+    'https://www.lktoolkit.in',
+    'https://lktoolkit.in',
+    'https://lktool.vercel.app',
 ]
 
 # Email Configuration - Properly load from environment with defaults
@@ -370,6 +378,9 @@ SECURE_CONTENT_TYPE_NOSNIFF = True
 # Trust the Vercel frontend origin for CSRF
 CSRF_TRUSTED_ORIGINS = [
     'https://projectsection-ten.vercel.app',
+    'https://www.lktoolkit.in',
+    'https://lktoolkit.in',
+    'https://lktool.vercel.app',
     'https://lktools.onrender.com',
     'http://localhost:5173',
     "http://localhost:3000",
